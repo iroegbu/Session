@@ -10,7 +10,7 @@ Include the library in your project using composer:
 
     {
         "require-dev": {
-            "iroegbu/Session": "0.0.1"
+            "iroegbu/Session": "dev-master"
         }
     }
 
