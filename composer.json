@@ -1,6 +1,6 @@
 {
     "name": "iroegbu/session",
-    "description": "Storage package",
+    "description": "Session storage package",
     "version": "0.0.1",
     "type": "library",
     "keywords": ["session"],
