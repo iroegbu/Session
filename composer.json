@@ -1,10 +1,10 @@
 {
     "name": "iroegbu/session",
     "description": "Session storage package",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "type": "library",
     "keywords": ["session"],
-    "homepage": "https://github.com/iroegbu/Storage",
+    "homepage": "https://github.com/iroegbu/Session",
     "license": "See the LICENSE file",
     "authors": [
         {
