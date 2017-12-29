@@ -6,7 +6,6 @@
 
 namespace Test\Unit\Storage;
 
-
 use Session\Storage\NativeSession;
 
 class NativeSessionTest extends \PHPUnit_Framework_TestCase
@@ -17,11 +16,6 @@ class NativeSessionTest extends \PHPUnit_Framework_TestCase
      */
     public function testImplementsCorrectInterface()
     {
-        $this->setExpectedExceptionRegExp(
-            'PHPUnit_Framework_Error_Warning',
-            '/Cannot send session cookie - headers already sent/'
-        );
-
         $this->assertInstanceOf('Session\Session', new NativeSession('/', '.example.com', true));
     }
 

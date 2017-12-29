@@ -1,11 +1,10 @@
-<?php
+<?php declare(strict_types=1);
 /**
  * Project: Storage.
  * User:    Iroegbu
  */
 
 namespace Session\Storage;
-
 
 use Session\Exception\OutOfBoundsException;
 use Session\Session;
@@ -25,7 +24,7 @@ class NativeSession implements Session
      * @param $key
      * @return bool
      */
-    public function exists($key)
+    public function exists($key): bool
     {
         return isset($_SESSION[$key]);
     }
@@ -39,7 +38,7 @@ class NativeSession implements Session
      */
     public function get($key)
     {
-        if (isset($_SESSION[$key])) {
+        if ($this->exists($key)) {
             return $_SESSION[$key];
         }
         throw new OutOfBoundsException($key);

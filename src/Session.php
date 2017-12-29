@@ -6,7 +6,6 @@
 
 namespace Session;
 
-
 /**
  * Interface Storage
  * @package Storage
